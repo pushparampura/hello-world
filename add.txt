@@ -1,3 +1,0 @@
-adding some numbers
-1+2=3
-yes correct
