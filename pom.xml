@@ -33,7 +33,7 @@
       
       <id>my-repo1</id>
       <name>your custom repo</name>
-      <url>http://localhost:8081/repository/samle-rel/</url>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
 
     </snapshotRepository>
 
