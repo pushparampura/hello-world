@@ -43,8 +43,8 @@
    
   <distributionManagement>
   <repository>
-      <id>nexus-sample</id>
-      <url>http://localhost:8081/repository/sample/</url>
+      <id>nexus-Jobvite</id>
+      <url>http://localhost:8081/repository/Jobvite/</url>
    </repository>
    </repository>
 </distributionManagement>
