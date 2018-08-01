@@ -43,8 +43,9 @@
    
   <distributionManagement>
   <repository>
-      <id>nexus-Jobvite</id>
-      <url>http://localhost:8081/repository/Jobvite/</url>
+      <id>nexus-sample</id>
+      <url>http://localhost:8081/repository/sample/</url>
+   </repository>
    </repository>
 </distributionManagement>
   
