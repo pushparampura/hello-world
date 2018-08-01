@@ -20,19 +20,11 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-<distributionManagement>
 
 	<repository>
 		<id>releases</id>
 		<name>samle-rel</name>
 		<url>http://localhost:8081/repository/samle-rel/</url>
 	</repository>
-
-	<snapshotRepository>
-		<id>snapshots</id>
-		<name>sample</name>
-		<url>>http://localhost:8081/repository/sample/</url>
-	</snapshotRepository>
-<distributionManagement>
 
 </project>
