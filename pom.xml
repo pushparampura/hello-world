@@ -21,10 +21,4 @@
     </dependency>
   </dependencies>
 
-	<repository>
-		<id>releases</id>
-		<name>samle-rel</name>
-		<url>http://localhost:8081/repository/samle-rel/</url>
-	</repository>
-
 </project>
