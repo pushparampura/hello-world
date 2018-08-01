@@ -20,4 +20,15 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+<repositories>
+    <repository>
+      <id>1234</id>
+      <name>your custom repo <repositories>
+    <repository>
+      <id>1234</id>
+      <name>your custom repo</name>
+      <url>http://localhost:8081/repository/sample/</url>
+    </repository>
+  </repositories>
 </project>
