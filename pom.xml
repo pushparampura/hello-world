@@ -23,7 +23,7 @@
     </dependency>
   </dependencies>
    
-    <build>
+  <build>
     
     <plugins>
       <plugin>
@@ -42,17 +42,17 @@
   </build>
    
   <distributionManagement>
-    <repository>
+   <repository>
       <id>nexus-Jobvite</id>
       <url>http://localhost:8081/repository/Jobvite/</url>
-    </repository>
-    <repository>
+   </repository>
+   <repository>
       <id>nexus-Sample</id>
       <url>http://localhost:8081/repository/Sample/</url>
-    </repository>
+   </repository>
 
 
-</distributionManagement>
+  </distributionManagement>
   
  
 </project>
