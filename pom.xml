@@ -22,10 +22,6 @@
   </dependencies>
 
 
-
-
-
-
 <build>
     
     <plugins>
@@ -58,20 +54,7 @@
       <skipStaging>true</skipStaging>
    </configuration>
 </plugin>
-
-
-  </build>
-
-
-<distributionManagement>
-   <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://localhost:8081/repository/sample/</url>
-   </snapshotRepository>
-</distributionManagement>
-
-
-
+</build>
 
 
 
