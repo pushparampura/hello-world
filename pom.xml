@@ -4,7 +4,7 @@
 
   <groupId>com.jobvite1</groupId>
   <artifactId>MavenTest1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
 
   <name>MavenTest1</name>
