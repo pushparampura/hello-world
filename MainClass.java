@@ -6,6 +6,7 @@ public class MainClass {
 
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public void test()
 	{
 		system.out.println("test");
@@ -14,5 +15,7 @@ public class MainClass {
 	{
 		system.out.println("tset1");
 >>>>>>> latha
+=======
+>>>>>>> pushpa
 	}
 }
