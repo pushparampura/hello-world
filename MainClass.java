@@ -12,5 +12,12 @@ public class MainClass {
 	public void test1()
 	{
 		system.out.println("tset1");
-	}}
+	}
+	}
+	
+	public void test1()
+	{
+		system.out.println("tset1");
+	}
 
+}

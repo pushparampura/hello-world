@@ -5,21 +5,22 @@ public class MainClass {
 		
 
 	}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	public void test()
 	{
 		system.out.println("test");
-=======
+<<<<<<< HEAD
+
 	public void test1()
 	{
 		system.out.println("tset1");
->>>>>>> latha
+	}}
 =======
->>>>>>> pushpa
 	}
+	
+	public void test1()
+	{
+		system.out.println("tset1");
+	}
+>>>>>>> d5ffef2f311f9c1b6b291b8ded6fab625d8895d5
 
-=======
-	}gdhxfschagfdxjshabgzx
->>>>>>> latha
+}
