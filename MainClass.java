@@ -9,15 +9,11 @@ public class MainClass {
 	{
 		system.out.println("test");
 
+	}
 	public void test1()
 	{
 		system.out.println("tset1");
 	}
-	}
-	
-	public void test1()
-	{
-		system.out.println("tset1");
 	}
 
 }
