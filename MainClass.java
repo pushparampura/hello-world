@@ -5,8 +5,5 @@ public class MainClass {
 		
 
 	}
-	public void test()
-	{
-		system.out.println("test");
 	}
 }
