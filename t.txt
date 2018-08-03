@@ -1,4 +1,0 @@
-Updating 6660c7c..022e886
-Fast-forward
- pom.xml | 6 ------
- 1 file changed, 6 deletions(-)
