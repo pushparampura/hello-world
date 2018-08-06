@@ -42,7 +42,7 @@
   <distributionManagement>
     <repository>
       <id>nexus123</id>
-      <url>http://localhost:8081/repository/maven-central/</url>
+      <url>http://localhost:8081/repository/nuget-hosted/</url>
     </repository>
   </distributionManagement>
   
