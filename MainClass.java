@@ -5,5 +5,10 @@ public class MainClass {
 		
 
 	}
+	public static void test()
+	{
+		System.out.println("hi");
+	}
+
 	}
 
