@@ -41,8 +41,8 @@
   
   <distributionManagement>
     <repository>
-      <id>nexus-jobvite</id>
-      <url>http://localhost:8081/repository/maven-public/</url>
+      <id>nexus123</id>
+      <url>http://localhost:8081/repository/Jobvite/</url>
     </repository>
   </distributionManagement>
   
