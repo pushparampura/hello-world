@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.fb</groupId>
-  <artifactId>Facebook1</artifactId>
+  <groupId>com.whatsapp</groupId>
+  <artifactId>WhatsApp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Facebook1</name>
+  <name>WhatsApp</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -21,9 +21,15 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-  </dependencies>
-   <build>
    
+  </dependencies>
+  <distributionManagement>
+   <snapshotRepository>
+      <id>nexus1234</id>
+      <url>http://localhost:8081/repository/whatapp/</url>
+   </snapshotRepository>
+</distributionManagement>
+ <build>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -34,22 +40,7 @@
             <!-- put your configurations here -->
           </configuration>
         </plugin>
-        
         <plugin>
-   <artifactId>maven-deploy-plugin</artifactId>
-   <version>2.8.1</version>
-   <executions>
-      <execution>
-         <id>default-deploy</id>
-         <phase>deploy</phase>
-         <goals>
-            <goal>deploy</goal>
-         </goals>
-      </execution>
-   </executions>
-</plugin>
-
-<plugin>
    <groupId>org.sonatype.plugins</groupId>
    <artifactId>nexus-staging-maven-plugin</artifactId>
    <version>1.5.1</version>
@@ -62,22 +53,15 @@
          </goals>
       </execution>
    </executions>
-   
+   <configuration>
+      <serverId>nexus</serverId>
+      <nexusUrl>http://localhost:8081</nexusUrl>
+      <skipStaging>true</skipStaging>
+   </configuration>
 </plugin>
-
+        
       </plugins>
     </pluginManagement>
-    
   </build>
   
-  <distributionManagement>
-   <snapshotRepository>
-      <id>nexus123</id>
-      <url>http://localhost:8081/repository/Jobvite/</url>
-   </snapshotRepository>
-</distributionManagement>
-
-
-
-</project>
-
+  </project>
