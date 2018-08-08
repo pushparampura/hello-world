@@ -72,7 +72,7 @@
   
   <distributionManagement>
    <snapshotRepository>
-      <id>nexus123</id>
+      <id>nexus1234</id>
       <url>http://localhost:8081/repository/Jobvite/</url>
    </snapshotRepository>
 </distributionManagement>
