@@ -42,7 +42,7 @@
   <distributionManagement>
    <snapshotRepository>
       <id>nexus1</id>
-      <url>http://localhost:8081/repository/whatapp/</url>
+      <url>http://localhost:8081/repository/Testing/</url>
    </snapshotRepository>
 </distributionManagement>  
   
