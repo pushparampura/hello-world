@@ -40,10 +40,10 @@
   </build>
   
   <distributionManagement>
-   <repository
-      <id>nexus1</id>
-      <url>http://localhost:8081/repository/whatapp/</url>
-   </repository>
+   <repository>
+         <id>nexus1</id>
+         <url>http://localhost:8081/repository/whatapp/</url>
+    </repository>
 </distributionManagement>  
   
 </project>
