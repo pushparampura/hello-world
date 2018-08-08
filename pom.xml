@@ -73,7 +73,7 @@
   <distributionManagement>
    <snapshotRepository>
       <id>nexus123</id>
-      <url>http://localhost:8081/repository/maven-snapshots/</url>
+      <url>http://localhost:8081/repository/Jobvite/</url>
    </snapshotRepository>
 </distributionManagement>
 
