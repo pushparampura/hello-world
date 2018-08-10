@@ -4,7 +4,7 @@ pipeline {
         stage('Example clean') {
             steps {
                 withMaven(maven:'maven1'){
-                    sh 'mvn clean'
+                    bat 'mvn clean'
                 echo 'Hello World'
                 }
             }
