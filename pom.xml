@@ -61,10 +61,10 @@
   </build>
   
    <distributionManagement>
-   <snapshotRepository>
+   <repository>
       <id>nexus1</id>
       <url>http://localhost:8081/repository/jenkins-test/</url>
-   </snapshotRepository>
+   </repository>
 </distributionManagement>  
   
 </project>
