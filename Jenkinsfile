@@ -1,19 +1,19 @@
 pipeline {
-    agent any
-    stages { 
-        stage('Example clean') {
+    agent none 
+    stages {
+        stage('Example Build') {
+            agent { docker 'maven:3-alpine' } 
             steps {
-                withMaven(maven:'maven1'){
-                    bat 'mvn clean'
-                echo 'Hello World'
-                }
+                echo 'Hello, Maven'
+                sh 'mvn --version'
             }
-           
         }
-        stage('Example') {
+        stage('Example Test') {
+            agent { docker 'openjdk:8-jre' } 
             steps {
-                echo 'Hello World'
-            }    
+                echo 'Hello, JDK'
+                sh 'java -version'
+            }
         }
     }
 }
