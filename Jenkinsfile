@@ -1,11 +1,20 @@
-node {
-    stage('Example') {
-        try {
-            sh 'exit 1'
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building'
+            }
         }
-        catch (exc) {
-            echo 'Something failed, I should sound the klaxons!'
-            throw
+        stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying'
+            }
         }
     }
 }
