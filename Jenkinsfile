@@ -1,16 +1,11 @@
-pipeline {
-    agent any
-    
-    stages {
-        stage('Example') {
-            steps {
-                withMaven(maven: 'maven1') {
-                    sh 'mvn --version'
-                    sh 'mvn clean test'
-                }
-                    
-                sh 'mvn --version'
-            }
+node {
+    stage('Example') {
+        try {
+            sh 'exit 1'
+        }
+        catch (exc) {
+            echo 'Something failed, I should sound the klaxons!'
+            throw
         }
     }
 }
