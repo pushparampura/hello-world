@@ -1,11 +1,20 @@
-job('DSL-Tutorial-1-Test') {
-    scm {
-        git('https://github.com/pushparampura/hello-world/')
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
-    triggers {
-        scm('H/15 * * * *')
-    }
-    steps {
-        maven('-e clean test package')
-    }
-}
