@@ -1,11 +1,14 @@
 pipeline {
     agent any
-    tools {
-        maven 'maven1' 
-    }
+    
     stages {
         stage('Example') {
             steps {
+                withMaven(maven: 'maven1') {
+                    sh 'mvn --version'
+                    sh 'mvn clean test'
+                }
+                    
                 sh 'mvn --version'
             }
         }
