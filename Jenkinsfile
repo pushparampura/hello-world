@@ -30,7 +30,7 @@ pipeline {
 
             steps {
 
-                build job: 'Deploy-to-staging'
+                build job: 'maven-project'
 
             }
 
