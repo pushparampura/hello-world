@@ -26,7 +26,7 @@ pipeline {
 
         }
 
-        stage ('Deploy to Staging'){
+        stage ('maven-project'){
 
             steps {
 
