@@ -9,10 +9,7 @@ pipeline {
             steps {
 
                 sh 'mvn clean package'
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building'
+
             }
 
             post {
@@ -35,17 +32,10 @@ pipeline {
 
                 build job: 'Deploy-to-staging'
 
-        stage('Test') {
-            steps {
-                echo 'Testing'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying'
             }
 
         }
 
     }
+
 }
