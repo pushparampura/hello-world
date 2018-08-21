@@ -1,21 +1,41 @@
 pipeline {
+
     agent any
-    stages { 
-        stage('Example Compile') {
+
+    stages{
+
+        stage('Build'){
+
             steps {
-	    withMaven(maven: 'maven1'){
-	         sh 'mvn compile'
-                echo 'Hello World'
+
+                sh 'mvn clean package'
+
             }
+
+            post {
+
+                success {
+
+                    echo 'Now Archiving...'
+
+                    archiveArtifacts artifacts: '**/target/*.war'
+
+                }
+
+            }
+
         }
-    }
-        stage('Example Test') {
+
+        stage ('Deploy to Staging'){
+
             steps {
-	    withMaven(maven: 'maven1'){
-	    sh 'mvn test'
-                echo 'Hello World'
+
+                build job: 'Deploy-to-staging'
+
             }
+
         }
+
     }
-}
+
 }
