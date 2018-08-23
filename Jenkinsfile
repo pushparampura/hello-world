@@ -9,5 +9,7 @@ pipeline {
                 bat 'mvn deploy'
                          
         }
-        
+      }
+    }    
+       
 }
