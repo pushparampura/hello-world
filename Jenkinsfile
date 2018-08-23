@@ -4,12 +4,12 @@ pipeline {
         stage('build') {
             steps {
                 bat 'mvn -version'
-                bat 'mvn clean'
-                bat 'mvn package'
-                bat 'mvn deploy'
-                         
+            }
         }
-      }
-    }    
-       
+        stage('build') {
+            steps {
+                bat 'mvn clean'
+            }
+        }
+                  
 }
