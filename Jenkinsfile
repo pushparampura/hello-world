@@ -11,6 +11,5 @@ pipeline {
                 bat 'mvn clean'
             }
         }
-    }
-                  
+    }                
 }
