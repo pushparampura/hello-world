@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    checkout scm: [$class: 'GitSCM', 
+  userRemoteConfigs: [[url: https://github.com/pushparampura/hello-world.git], [credentialsId: credential]], 
+  branches: [[name: latha]]],poll: false
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
 
