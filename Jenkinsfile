@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage("foo") {
             steps {
-                bat 'echo "flag: ${params.region}"'
+                bat 'echo ${params.region}'
                 
             }
         }
