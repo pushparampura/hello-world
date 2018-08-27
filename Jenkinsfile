@@ -1,33 +1,15 @@
 pipeline {
     agent any
-    triggers {
-        pollSCM('* * * * *')
+
+    parameters {
+        booleanParam(defaultValue: true, description: '', name: 'userFlag')
     }
+
     stages {
-        stage('build') {
+        stage("foo") {
             steps {
-                bat 'mvn -version'
+                echo "flag: ${params.userFlag}"
             }
         }
-        stage('clean') {
-            steps {
-                bat 'mvn clean'
-            }
-        }
-        stage('package') {
-            steps {
-                bat 'mvn package'
-            }
-        }
-        stage('test') {
-            steps {
-                bat 'mvn test'
-            }
-        }
-        stage('deploy') {
-            steps {
-                bat 'mvn deploy'
-            }
-        }
-    }                
+    }
 }
